@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
 .App-logo {
@@ -36,3 +39,8 @@
     transform: rotate(360deg);
   }
 }
+
+.border{
+  border: 1px solid grey;
+}
+

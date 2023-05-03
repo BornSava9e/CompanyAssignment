@@ -17,14 +17,16 @@ const ProfileImg = () => {
     }
 
   return (
-    <div >
-        <div onClick={handleImageClick}>
+    <span style={{display:"flex"}}>
+        <div style={{marginLeft:"10px", width:"100px" , height:"100px"}}onClick={handleImageClick}>
         
         {image ? <img style={{width:"100px", height:"100px"}} src={URL.createObjectURL(image)} alt='profile' /> 
         : <img style={{width:"100px", height:"100px"}} src="./Logi.png" alt='profile' />}
         <input type="file" ref={inputRef} onChange={handleImageChange} style={{display :"none"}} />
+        
     </div>
-    </div>
+    <input style={{border:"none", height:"20px", textDecoration:"underline", fontWeight:"bold", fontSize:"15px", margin:"10px"}} type="text" placeholder='title'/>
+    </span>
     )
 }
 
